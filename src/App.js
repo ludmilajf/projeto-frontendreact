@@ -98,6 +98,7 @@ function App() {
         precoMaximo={precoMaximo}
         onChangePrecoMaximo={onChangePrecoMaximo}
       />
+      
       {renderizaTela()}
     </div>
   );

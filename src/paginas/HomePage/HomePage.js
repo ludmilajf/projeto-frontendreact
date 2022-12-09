@@ -2,6 +2,7 @@ import React from 'react'
 import { Main } from './HomePage-styled'
 import produtos from '../../assets/produtos.json'
 import ProdutoCard from '../../componentes/ProdutoCard/ProdutoCard'
+import Footer from '../../componentes/Footer/Footer'
 
 const HomePage = (props) => {
     const { adicionaNoCarrinho,
@@ -46,11 +47,11 @@ const HomePage = (props) => {
 
 
     return (
+        <div>
+            <Main>
+                <section>
 
-        <Main>
-            <section>
-
-                {/* {
+                    {/* {
             ordenaPorOrdemAlfabetica().map((produto) => (
                 <ProdutoCard
                     produto={produto}
@@ -60,7 +61,7 @@ const HomePage = (props) => {
             />
         ))
             } */}
-                {/* {
+                    {/* {
                 filtraItensPorTexto()
                     .map((produto) => (
                         <ProdutoCard
@@ -71,26 +72,28 @@ const HomePage = (props) => {
                     />
                 ))
             } */}
-                {
-                    produtos
-                    //     .filter((produto) => {
-                    //         return produto.preco >= precoMinimo || precoMinimo === ""
-                    //     })
-                    //     .filter((produto) => {
-                    //         return produto.preco <= precoMaximo || precoMaximo === ""
-                    //     })
-                        .map((produto) => (
-                            <ProdutoCard
-                                produto={produto}
-                                adicionaNoCarrinho={adicionaNoCarrinho}
-                                key={produto.id}
-                                isOnHomePage={true}
-                        />
-                        ))
-                }
+                    {
+                        produtos
+                            //     .filter((produto) => {
+                            //         return produto.preco >= precoMinimo || precoMinimo === ""
+                            //     })
+                            //     .filter((produto) => {
+                            //         return produto.preco <= precoMaximo || precoMaximo === ""
+                            //     })
+                            .map((produto) => (
+                                <ProdutoCard
+                                    produto={produto}
+                                    adicionaNoCarrinho={adicionaNoCarrinho}
+                                    key={produto.id}
+                                    isOnHomePage={true}
+                                />
+                            ))
+                    }
 
-            </section>
-        </Main>
+                </section>
+            </Main>
+            <Footer />
+        </div>
     )
 }
 
