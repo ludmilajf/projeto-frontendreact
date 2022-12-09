@@ -1,23 +1,104 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Header from "./componentes/Header/Header";
+import Carrinho from "./paginas/Carrinho/Carrinho";
+import HomePage from "./paginas/HomePage/HomePage";
+import NotFoundPage from "./paginas/NotFoundPage/NotFoundPage-styled";
 
 function App() {
+  const [telaAtiva, setTelaAtiva] = useState("HomePage")
+
+  const [carrinho, setCarrinho] = useState([])
+
+  const [filtraTexto, setFiltraTexto] = useState("")
+
+  const [ordenaAlfabeto, setOrdenaAlfabeto] = useState("")
+
+  const [precoMinimo, setPrecoMinimo] = useState("")
+
+  const [precoMaximo, setPrecoMaximo] = useState("")
+
+
+  const mudaParaHomePage = () => setTelaAtiva("HomePage")
+  const mudaParaCarrinho = () => setTelaAtiva("Carrinho")
+
+  const renderizaTela = () => {
+    switch (telaAtiva) {
+      case "HomePage":
+        return <HomePage
+          adicionaNoCarrinho={adicionaNoCarrinho}
+          filtraTexto={filtraTexto}
+        />
+      case "Carrinho":
+        return <Carrinho
+          carrinho={carrinho}
+          deletaItemDoCarrinho={deletaItemDoCarrinho}
+        />
+      default:
+        return <NotFoundPage />
+    }
+  }
+
+  const onChangeFiltraTexto = (e) => {
+    setFiltraTexto(e.target.value)
+  }
+
+  const onChangeAlfabeto = (e) => {
+    setOrdenaAlfabeto(e.target.value);
+  };
+
+  const onChangePrecoMinimo = (e) => {
+    setPrecoMinimo(e.target.value)
+  }
+
+  const onChangePrecoMaximo = (e) => {
+    setPrecoMaximo(e.target.value)
+  }
+
+  
+
+  const adicionaNoCarrinho = (produtoParaAdicionar) => {
+    const novoCarrinho = [...carrinho]
+
+    const produtoEncontrado = novoCarrinho.find(
+      (produtoNoCarrinho) => produtoNoCarrinho.id === produtoParaAdicionar.id
+    )
+    if (!produtoEncontrado) {
+      const novoProduto = { ...produtoParaAdicionar, quantidade: 1 }
+      novoCarrinho.push(novoProduto)
+    } else {
+      produtoEncontrado.quantidade++
+    }
+    setCarrinho(novoCarrinho)
+  }
+
+
+
+  const deletaItemDoCarrinho = (produtoParaDeletar) => {
+    const novoCarrinho = [...carrinho]
+
+    const procuraIndex = novoCarrinho.findIndex(
+      (produtoNoCarrinho) => produtoNoCarrinho.id === produtoParaDeletar.id
+    )
+    novoCarrinho.splice(procuraIndex, 1)
+    setCarrinho(novoCarrinho)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header
+        mudaParaHomePage={mudaParaHomePage}
+        mudaParaCarrinho={mudaParaCarrinho}
+        itensNoCarrinho={carrinho.length}
+        filtraTexto={filtraTexto}
+        onChangeFiltraTexto={onChangeFiltraTexto}
+        ordenaAlfabeto={ordenaAlfabeto}
+        onChangeAlfabeto={onChangeAlfabeto}
+        precoMinimo={precoMinimo}
+        onChangePrecoMinimo={onChangePrecoMinimo}
+        precoMaximo={precoMaximo}
+        onChangePrecoMaximo={onChangePrecoMaximo}
+      />
+      {renderizaTela()}
     </div>
   );
 }

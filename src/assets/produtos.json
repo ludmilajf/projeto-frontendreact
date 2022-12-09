@@ -1,0 +1,149 @@
+[
+    {
+        "id": 1,
+        "nome": "NASA Rocket T-shirt",
+        "preco": 59.98,
+        "urlImagem": "https://cf.shopee.com.br/file/b7273d5c8198065619ddb7a840d3e652",
+        "altImagem": "Camiseta Nasa Rocket branca"
+    },
+    {
+        "id": 2,
+        "nome": "Cães Espaciais T-shirt",
+        "preco": 65,
+        "urlImagem": "https://ae01.alicdn.com/kf/Hecf61eeb23ee43ae918ba659c3bd1746m/Urss-r-ssia-c-es-espaciais-Belka-e-strelka-cosmonaut-camisa-novas-tend-ncias-camiseta.jpg_Q90.jpg_.webp",
+        "altImagem": "Camiseta Cães Espaciais preta"
+    },
+    {
+        "id": 3,
+        "nome": "NASA colors T-shirt",
+        "preco": 59.95,
+        "urlImagem": "https://static3.tcdn.com.br/img/img_prod/460977/camiseta_unissex_nasa_agencia_governamental_exploracao_espacial_espaco_branca_cd_106125_1_f060ec50f9dbfe068ffef091d46a52cf.jpg",
+        "altImagem": "Camiseta Nasa colors branca"
+    },
+    {
+        "id": 4,
+        "nome": "Camisa Galaxy",
+        "preco": 119.99,
+        "urlImagem": "https://img.lojasrenner.com.br/item/553182297/large/10.jpg",
+        "altImagem": "Camisa manga curta galaxia preta"
+    },
+    {
+        "id": 5,
+        "nome": "Astronauta T-shirt",
+        "preco": 34.59,
+        "urlImagem": "https://img.ltwebstatic.com/gspCenter/goodsImage/2022/6/22/7185430756/4B1EB2EEACABFA0C3DF61FC3043C4E3F_thumbnail_600x.jpg",
+        "altImagem": "Camiseta Astronauta branca"
+    },
+    {
+        "id": 6,
+        "nome": "Uniforme Astronauta",
+        "preco": 83.59,
+        "urlImagem": "https://cf.shopee.com.br/file/c8d1f1ff7403a6dc7baca07a08c9f888",
+        "altImagem": "Uniforme Astronauta manga longa"
+    },
+    {
+        "id": 7,
+        "nome": "Camisa Naves Espaciais",
+        "preco": 139.99,
+        "urlImagem": "https://ae01.alicdn.com/kf/Se4c77e5bd6f7469baf7bf9c36b18cadcA/Nave-espacial-3d-praia-havaiano-2022-ver-o-anime-camisa-de-manga-curta-streetwear-oversized-5xl.png_.webp",
+        "altImagem": "Camisa manga curta Naves Espaciais azul"
+    },
+    {
+        "id": 8,
+        "nome": "Star Wars T-shirt",
+        "preco": 78,
+        "urlImagem": "https://cea.vtexassets.com/arquivos/ids/11010572-800-auto?v=637105004901400000&width=800&height=auto&aspect=true",
+        "altImagem": "Camiseta Star Wars preta"
+    },
+    {
+        "id": 9,
+        "nome": "Jaqueta NASA",
+        "preco": 279.99,
+        "urlImagem": "https://cf.shopee.com.br/file/b08347c347d4ec65955b61a32c478db2",
+        "altImagem": "Jaqueta NASA branca com detalhes"
+    },
+    {
+        "id": 10,
+        "nome": "Moletom Astronauta",
+        "preco": 180,
+        "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiSalZGA0DrIwXIxwYHsx0uS4EAz8UuRt5pg&usqp=CAU",
+        "altImagem": "Moletom Astronauta vermelho"
+    },
+    {
+        "id": 11,
+        "nome": "Caneca Viagem Espacial",
+        "preco": 45,
+        "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwS3VDF-WSw9N2xE6Aoqf-uLE8n0IJlOJGrQ&usqp=CAU",
+        "altImagem": "Caneca Viagem Espacial branca"
+    },
+    {
+        "id": 12,
+        "nome": "Caneca Star Wars",
+        "preco": 55,
+        "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGHVgcKmFUmvHt9Nu0CUsTkz5wAaGpBtUijQ&usqp=CAU",
+        "altImagem": "Caneca Star Wars preta"
+    },
+    {
+        "id": 13,
+        "nome": "Caneca NASA",
+        "preco": 45,
+        "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWCkLChdbtaWWS4Zai8th0qcT7BxIlc59UHQ&usqp=CAU",
+        "altImagem": "Caneca NASA preta"
+    },
+    {
+        "id": 14,
+        "nome": "Almofada Nave Espacial",
+        "preco": 86.86,
+        "urlImagem": "https://images-americanas.b2w.io/produtos/5206552695/imagens/novo-brinquedo-de-pelucia-astronauta-nave-espacial-recheado-macio-boneca-dos-desenhos-animados-travesseiro-criancas-brinquedos-aviao-criativo-criancas-meninos-presente-aniversario/5206552695_1_large.jpg",
+        "altImagem": "Almofada Nave Espacial"
+    },
+    {
+        "id": 15,
+        "nome": "Almofada Astronauta",
+        "preco": 86.87,
+        "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaAhuhryXmuQfRs1MeOCfSfhZ9D-1vPrQUnA&usqp=CAU",
+        "altImagem": "Almofada Astronauta "
+    },
+    {
+        "id": 16,
+        "nome": "Luminária Nave Espacial",
+        "preco": 149,
+        "urlImagem": "https://http2.mlstatic.com/D_NQ_NP_588001-MLB20264302037_032015-O.jpg",
+        "altImagem": "Luminária Nave Espacial"
+    },
+    {
+        "id": 17,
+        "nome": "Camisa Planetas",
+        "preco": 50,
+        "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqpNFSgX1sxtsAIOJcQIPr9_nuhfw5eZEqLA&usqp=CAU",
+        "altImagem": "Camisa Planetas cinza"
+    },
+    {
+        "id": 18,
+        "nome": "Chinelo Viagem Espacial",
+        "preco": 38,
+        "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNOHvtCJ8CqPKXqheFKg3kKm0iocEv2WHCtA&usqp=CAU",
+        "altImagem": "Chinelo Viagem Espacial"
+    },
+    {
+        "id": 19,
+        "nome": "Luminária Astronauta",
+        "preco": 179.89,
+        "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZAPy0iwQbSqFarlcSN-c2Crm-G6fzAC7-Og&usqp=CAU",
+        "altImagem": "Chinelo Viagem Espacial"
+    },
+    {
+        "id": 20,
+        "nome": "Luminária Planeta LED",
+        "preco": 150,
+        "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLZH9wPIUCl4UZBLzqiRNxO8XH6iFKl9BhPAPEnj_y90kjW4fWFXHfnNGHZwg1aZf1Dn0&usqp=CAU",
+        "altImagem": "Luminária Planeta LED"
+    },
+    {
+        "id": 21,
+        "nome": "Tênis NASA",
+        "preco": 180,
+        "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqQ2Demb0rbIfBqRpf2W61TuxV5OmeZ0QVYg&usqp=CAU",
+        "altImagem": "Tênis NASA branco"
+    }
+]
