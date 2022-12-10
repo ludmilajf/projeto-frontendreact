@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./componentes/Header/Header";
 import Carrinho from "./paginas/Carrinho/Carrinho";
 import HomePage from "./paginas/HomePage/HomePage";
@@ -68,6 +68,8 @@ function App() {
     } else {
       produtoEncontrado.quantidade++
     }
+    const virarString = JSON.stringify(novoCarrinho)
+    localStorage.setItem("local", virarString)
     setCarrinho(novoCarrinho)
   }
 
@@ -80,8 +82,26 @@ function App() {
       (produtoNoCarrinho) => produtoNoCarrinho.id === produtoParaDeletar.id
     )
     novoCarrinho.splice(procuraIndex, 1)
+    const virarString = JSON.stringify(novoCarrinho)
+    localStorage.setItem("local", virarString)
     setCarrinho(novoCarrinho)
   }
+
+  
+
+  const consultarItem = () => {
+    if (localStorage.getItem("local")) {
+      const armazenarItem = localStorage.getItem("local")
+      const pegarString = JSON.parse(armazenarItem);
+      setCarrinho(pegarString)
+    }
+  }
+
+  useEffect (() => {
+    consultarItem()
+  }, [])
+
+  
 
   return (
     <div>
@@ -92,11 +112,11 @@ function App() {
         filtraTexto={filtraTexto}
         onChangeFiltraTexto={onChangeFiltraTexto}
         ordenaAlfabeto={ordenaAlfabeto}
-        onChangeAlfabeto={onChangeAlfabeto}
+        setOrdenaAlfabeto={setOrdenaAlfabeto}
         precoMinimo={precoMinimo}
-        onChangePrecoMinimo={onChangePrecoMinimo}
+        setPrecoMinimo={setPrecoMinimo}
         precoMaximo={precoMaximo}
-        onChangePrecoMaximo={onChangePrecoMaximo}
+        setPrecoMaximo={setPrecoMaximo}
       />
       
       {renderizaTela()}

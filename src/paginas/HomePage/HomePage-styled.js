@@ -10,7 +10,9 @@ section {
     padding: 8px;
     font-family: ;
 
-
+    h1, hr{
+        width: 100%;
+    }
     
 }
 `

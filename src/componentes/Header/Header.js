@@ -25,36 +25,20 @@ export default function Header(props) {
                 </a>
             </div>
 
-            <div className='campo-de-pesquisa'>
+            <div className='campo-de-pesquisa-e-filtro'>
                 <input placeholder='Pesquisar' value={filtraTexto} onChange={onChangeFiltraTexto} />
                 <button>
                     <img src={pesquisarIcone} alt='Icone de pesquisa' />
                 </button>
-            </div>
-            <div className='filtros-de-pesquisa'>
-                <div className='ordem-alfabetica'>
-                    <select >
+                <select >
                         <option value="">Ordenar</option>
                         <option value="crescente">Crescente</option>
                         <option value="decrescente">Decrescente</option>
+                        <option value="precoMinimo">Menor preço</option>
+                        <option value="precoMaximo">Maior preço</option>
                     </select>
-                </div>
-                <div className='faixa-de-preco'>
-                    <input
-                        type="number"
-                        placeholder="Valor mínimo"
-                        value={precoMinimo}
-                        onChange={onChangePrecoMinimo}
-                    />
-
-                    <input
-                        type="number"
-                        placeholder="Valor máximo"
-                        value={precoMaximo}
-                        onChange={onChangePrecoMaximo}
-                    />
-                </div>
             </div>
+            
 
             <div className='campo-de-carrinho-e-produtos'>
                 <button onClick={mudaParaHomePage}>

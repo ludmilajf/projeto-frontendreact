@@ -9,11 +9,12 @@ const HomePage = (props) => {
         filtraTexto,
         ordenaAlfabeto,
         onChangeAlfabeto,
+        setOrdenaAlfabeto,
         produto,
         precoMinimo,
-        onChangePrecoMinimo,
+        setPrecoMinimo,
         precoMaximo,
-        onChangePrecoMaximo } = props
+        setPrecoMaximo } = props
 
     const filtraItensPorTexto = () => {
         return produtos.filter(
@@ -51,6 +52,49 @@ const HomePage = (props) => {
             <Main>
                 <section>
 
+                    {produtos
+                        .filter((produto) => {
+                            return produto.preco >= precoMinimo
+                        })
+                        .filter((produto) => {
+                            return produto.preco <= precoMaximo
+                        })
+                        .sort(() => {
+                            if (ordenaAlfabeto === "crescente") {
+                                return 0
+                            } else {
+                                return -1
+                            }
+                        })
+                        .map((produto) => (
+                            <ProdutoCard key={produto.id} produto={produto} adicionaNoCarrinho={adicionaNoCarrinho} />
+                        ))}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     {/* {
             ordenaPorOrdemAlfabetica().map((produto) => (
                 <ProdutoCard
@@ -61,7 +105,7 @@ const HomePage = (props) => {
             />
         ))
             } */}
-                    {/* {
+                    {
                 filtraItensPorTexto()
                     .map((produto) => (
                         <ProdutoCard
@@ -71,8 +115,8 @@ const HomePage = (props) => {
                             isOnHomePage={true}
                     />
                 ))
-            } */}
-                    {
+            }
+                    {/* {
                         produtos
                             //     .filter((produto) => {
                             //         return produto.preco >= precoMinimo || precoMinimo === ""
@@ -88,7 +132,7 @@ const HomePage = (props) => {
                                     isOnHomePage={true}
                                 />
                             ))
-                    }
+                    } */}
 
                 </section>
             </Main>

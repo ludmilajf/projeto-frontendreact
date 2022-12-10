@@ -18,7 +18,7 @@ export const HeaderContainer = styled.header`
      }
     
 
-    .campo-de-pesquisa {
+    .campo-de-pesquisa-e-filtro {
         display: flex;
         align-items: center;
         gap: 8px;
@@ -41,6 +41,13 @@ export const HeaderContainer = styled.header`
             border: none;
             border-radius: 6px;
             
+        }
+        select {
+            background-color: #A195B8;
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-radius: 6px;
         }
 
         img {

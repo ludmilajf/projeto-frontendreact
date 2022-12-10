@@ -14,7 +14,6 @@ const Carrinho = (props) => {
     <Main>
         <section>
             <h1>Carrinho</h1>
-            <hr/>
             {
                 carrinho.map((produto) => (
                     <ProdutoCard 
@@ -26,6 +25,7 @@ const Carrinho = (props) => {
 
                 ))
             }
+            
             <hr/>
             <h3>Total = {priceFormatter.format(total)}</h3>
             <button>Finalizar compra</button>
