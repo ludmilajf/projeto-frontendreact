@@ -8,13 +8,8 @@ const HomePage = (props) => {
     const { adicionaNoCarrinho,
         filtraTexto,
         ordenaAlfabeto,
-        onChangeAlfabeto,
-        setOrdenaAlfabeto,
-        produto,
         precoMinimo,
-        setPrecoMinimo,
-        precoMaximo,
-        setPrecoMaximo } = props
+        precoMaximo } = props
 
     const filtraItensPorTexto = () => {
         return produtos.filter(
@@ -71,30 +66,6 @@ const HomePage = (props) => {
                         ))}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     {/* {
             ordenaPorOrdemAlfabetica().map((produto) => (
                 <ProdutoCard
@@ -106,24 +77,7 @@ const HomePage = (props) => {
         ))
             } */}
                     {
-                filtraItensPorTexto()
-                    .map((produto) => (
-                        <ProdutoCard
-                            produto={produto}
-                            adicionaNoCarrinho={adicionaNoCarrinho}
-                            key={produto.id}
-                            isOnHomePage={true}
-                    />
-                ))
-            }
-                    {/* {
-                        produtos
-                            //     .filter((produto) => {
-                            //         return produto.preco >= precoMinimo || precoMinimo === ""
-                            //     })
-                            //     .filter((produto) => {
-                            //         return produto.preco <= precoMaximo || precoMaximo === ""
-                            //     })
+                        filtraItensPorTexto()
                             .map((produto) => (
                                 <ProdutoCard
                                     produto={produto}
@@ -132,7 +86,7 @@ const HomePage = (props) => {
                                     isOnHomePage={true}
                                 />
                             ))
-                    } */}
+                    }
 
                 </section>
             </Main>

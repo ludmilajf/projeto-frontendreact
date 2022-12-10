@@ -9,13 +9,7 @@ export default function Header(props) {
         mudaParaCarrinho,
         itensNoCarrinho,
         filtraTexto,
-        onChangeFiltraTexto,
-        ordenaAlfabeto,
-        onChangeAlfabeto,
-        precoMinimo,
-        onChangePrecoMinimo,
-        precoMaximo,
-        onChangePrecoMaximo
+        onChangeFiltraTexto
     } = props
     return (
         <HeaderContainer>

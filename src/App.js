@@ -4,7 +4,8 @@ import Carrinho from "./paginas/Carrinho/Carrinho";
 import HomePage from "./paginas/HomePage/HomePage";
 import NotFoundPage from "./paginas/NotFoundPage/NotFoundPage-styled";
 
-function App() {
+function App(props) {
+
   const [telaAtiva, setTelaAtiva] = useState("HomePage")
 
   const [carrinho, setCarrinho] = useState([])
@@ -54,7 +55,7 @@ function App() {
     setPrecoMaximo(e.target.value)
   }
 
-  
+
 
   const adicionaNoCarrinho = (produtoParaAdicionar) => {
     const novoCarrinho = [...carrinho]
@@ -87,7 +88,7 @@ function App() {
     setCarrinho(novoCarrinho)
   }
 
-  
+
 
   const consultarItem = () => {
     if (localStorage.getItem("local")) {
@@ -97,11 +98,13 @@ function App() {
     }
   }
 
-  useEffect (() => {
+  useEffect(() => {
     consultarItem()
   }, [])
 
   
+
+
 
   return (
     <div>
@@ -118,7 +121,7 @@ function App() {
         precoMaximo={precoMaximo}
         setPrecoMaximo={setPrecoMaximo}
       />
-      
+
       {renderizaTela()}
     </div>
   );
